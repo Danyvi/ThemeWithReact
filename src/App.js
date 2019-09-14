@@ -1,12 +1,15 @@
 import React from 'react';
+import Counter from './Counter'
+import CounterHooks from './CounterHooks'
 
 function App() {
   return (
-    <div>
-      <button>-</button>
-      <span>0</span>
-      <button>+</button>
-    </div>
+    <>
+    Counter
+    <Counter initialCount={0}/>
+    Counter Hooks
+    <CounterHooks initialCount={0}/>
+    </>
   );
 }
 
